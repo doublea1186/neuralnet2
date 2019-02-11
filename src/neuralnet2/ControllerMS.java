@@ -89,8 +89,8 @@ public class ControllerMS extends JPanel implements ActionListener {
         Random rnd = new Random();
         for (int i = 0; i < numMines; i++) {
             mines.add(new Mines (true, new Point2D.Double(rnd.nextDouble() * xDim, rnd.nextDouble() * yDim)));
-//            if(Math.random() <= .5)
-//                mines.get(i).setType(false);
+            if(Math.random() <= .5)
+                mines.get(i).setType(false);
         }
         //start it up!
         timer = new Timer(1, this);

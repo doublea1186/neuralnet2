@@ -43,10 +43,10 @@ public class AgentMS {
         inputs.add(facing.getY());
         inputs.add(xfacing);
         inputs.add(yfacing);
-//        if(mines.get(closestMine).getType() == true)
-//            inputs.add((double)0);
-//        else
-//            inputs.add((double)1);
+        if(mines.get(closestMine).getType() == true)
+            inputs.add((double)0);
+        else
+            inputs.add((double)1);
 
         ArrayList<Double> output = brain.Update(inputs);
 
@@ -118,7 +118,7 @@ public class AgentMS {
 
         //draw the direction it's facing
         g.setColor(new Color(255, 0, 255));
-    //    g.drawLine((int)(position.getX()), (int)(position.getY()), (int)(position.getX() - (scale / 2) + facing.getX()*scale), (int)(position.getY() - (scale / 2) + facing.getY()*scale));
+        g.drawLine((int)(position.getX()), (int)(position.getY()), (int)(position.getX() - (scale / 2) + facing.getX()*scale), (int)(position.getY() - (scale / 2) + facing.getY()*scale));
         g.setTransform(at); //set the transform back to the normal transform
         //draw its fitness
         g.setColor(new Color(0, 255, 255));

@@ -7,7 +7,7 @@ public class Params {
     public static final int FPS = 60;								//frames per second for drawing...not used
 
     //for the neural network
-    public static final int INPUTS = 4;					//number of inputs
+    public static final int INPUTS = 5;					//number of inputs
     public static final int HIDDEN = 1;					//number of hidden layers
     public static final int NEURONS_PER_HIDDEN = 6; 	//number of neurons in each hidden layer
     public static final int OUTPUTS = 2;				//number of outputs
